@@ -25,5 +25,7 @@ app.listen(PORT, () => {
     Database Url from env: ${process.env.DATABASE_URL}
     Random environment variabble: ${process.env.NAME}
     Another random environment variable: ${process.env.TYPE}
+    App name: ${process.env.HEROKU_APP_NAME}
+    Parent app name: ${process.env.HEROKU_PARENT_APP_NAME}
     `)
 })
