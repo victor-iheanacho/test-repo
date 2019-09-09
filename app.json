@@ -1,0 +1,25 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NAME": {
+      "required": true
+    },
+    "TYPE": "BASH"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "test-repo",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
