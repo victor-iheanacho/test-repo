@@ -14,7 +14,8 @@ app.get("/", (req, res) => {
         message: "welcome to this test setup, new test info",
         test: `Random environment variabble: ${process.env.NAME}`,
         test2: `random environment variable: ${process.env.TYPE}`,
-        postgres: `Database Url from env: ${process.env.DATABASE_URL}`
+        postgres: `Database Url from env: ${process.env.DATABASE_URL}`,
+        DatabaseName: `Databse name from postgres: ${process.env.DATABASE_NAME}`
     });
 });
 
