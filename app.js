@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
         test2: `random environment variable: ${process.env.TYPE}`,
         postgres: `Database Url from env: ${process.env.DATABASE_URL}`,
         DatabaseName: `Databse name from postgres: ${process.env.DATABASE_NAME}`,
-        AppName: `${process.env.HEROKU_APP_NAME}`,
+        AppName: `Current app name: ${process.env.HEROKU_APP_NAME}`,
         ParentAppName: `${process.env.HEROKU_PARENT_APP_NAME}`
     });
 });
